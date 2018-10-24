@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (4.7.2)
+  - CarbonKit (2.2.2)
+  - CPF-CNPJ-Validator (1.0.2)
+  - CropViewController (2.3.6)
+  - DropDown (2.3.2)
+  - FreshchatSDK (1.4.0)
+  - IQKeyboardManagerSwift (5.0.0)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - SVProgressHUD (2.2.5)
+  - SwiftyToolTip (0.0.1)
+  - SWXMLHash (4.0.0)
+  - TextFieldEffects (1.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - CarbonKit
+  - CPF-CNPJ-Validator
+  - CropViewController
+  - DropDown
+  - FreshchatSDK
+  - IQKeyboardManagerSwift (= 5.0.0)
+  - SDWebImage (~> 4.0)
+  - SVProgressHUD
+  - SwiftyToolTip
+  - SWXMLHash (~> 4.0.0)
+  - TextFieldEffects
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CarbonKit
+    - CPF-CNPJ-Validator
+    - CropViewController
+    - DropDown
+    - FreshchatSDK
+    - IQKeyboardManagerSwift
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyToolTip
+    - SWXMLHash
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  CarbonKit: 0dec4738fa489b4c043a5f850c27fd0dbefb57cc
+  CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
+  CropViewController: e6d4bd512d15a1709e9ddf71fe7d98ffd05dda0f
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  FreshchatSDK: a7f9a47efc3700172db8ff33c62718166d0ccd5f
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyToolTip: 231c750a7e38cf7c06dc1702e81029f4cb85e128
+  SWXMLHash: 6bbc0bf72975a18ceda469fb7d6a886a26d81694
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+
+PODFILE CHECKSUM: 5f97455a96305f595c95337b9663f0fe86c05d45
+
+COCOAPODS: 1.5.3

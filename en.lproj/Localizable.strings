@@ -1,0 +1,121 @@
+/* 
+  Localizable.strings
+  Mixtiles
+
+  Created by viprak-Dipak on 24/10/18.
+  Copyright © 2018 viprak-Dipak. All rights reserved.
+ EN
+*/
+
+"alert_missing" = "Sorry we can’t found, something is missing";
+"alert_network" = "Please check your internet connection";
+
+//HomeVC
+"lbl_home_title" = "Tiles are beautiful and attach easily";
+"btn_createaset" = "Create a SET";
+
+//HelpVC
+"lbl_help" = "Help";
+"lbl_helpdetail" = "Talk to us about anything, or check out some common qestions below";
+"btn_talk_to_us" = "TALK TO US";
+
+//ViewController
+"lbl_pick_photo" = "Pick photos";
+"lbl_tab_all_photo" = "All photos";
+"lbl_tab_whatsapp" = "WhatsApp";
+"lbl_tiles_selected" = "Tiles selected";
+"btn_review_tiles" = "Review tiles";
+"alert_select_at_least" = "Select At least";
+"alert_photos" = "photos";
+"btn_ok" = "OK";
+
+//ReviewAdjustVC
+"lbl_title_review_adjust" = "Review & Adjust";
+"lbl_formats" = "Formats";
+"lbl_colors" = "Colors";
+"lbl_add_shipping_address" = "Add Shipping Address";
+"lbl_add_credit_card" = "Add Credit Card";
+"lbl_tiles_for" = "tiles for";
+"lbl_more_tiles" = "more tiles";
+"lbl_each" = "each";
+"lbl_Deliverd_by" = "Deliverd by";
+"btn_title_Add_promo_code" = "Add Promo Code";
+"lbl_total" = "Total:";
+"btn_confirm_order" = "Confirm Order";
+"lbl_copies" = "Copies";
+"lbl_copy" = "Copy";
+"alert_add_shipping_address" = "Add shipping address";
+"alert_add_credit_card_details" = "Add credit card details";
+"alert_more_tiles_needed" = "More Tiles Needed";
+"alert_brickart" = "Brickart order have to be three tiles or more";
+
+//AddAddressVC
+"lbl_title_add_address" = "Add Address";
+"txt_full_name" = "Full Name";
+"txt_email" = "Email";
+"txt_cell_phone_number" = "Cellphone Number";
+"txt_cep_number" = "CEP Number";
+"txt_street_address" = "Steet Address";
+"txt_street_number" = "Street Number";
+"txt_complement" = "Complement";
+"txt_neighborhood" = "Neighborhood";
+"txt_city" = "City";
+"txt_state" = "State";
+"btn_done" = "DONE";
+"alert_msg_full_name" = "Please enter full name";
+"alert_msg_empty_email" = "Please enter email address";
+"alert_msg_valid_email" = "Please enter valid email address";
+"alert_msg_cell_phone_number" = "Please enter Cellphone number";
+"alert_msg_valid_cell_no" = "Please enter valid Cellphone nunber";
+"alert_msg_cep_number" = "Please enter CEP Number";
+"alert_msg_valid_cep_number" = "Please enter valid CEP number";
+"alert_msg_city" = "Please enter city";
+"alert_msg_state" = "Please enter state";
+"alert_msg_street_number" = "Please enter street number";
+"alert_msg_complement" = "Please enter complement";
+"alert_msg_neighborhood" = "Please enter neighborhood";
+
+//AddCreditCardVC
+"lbl_title_add_credit_card" = "Add Credit Card";
+"txt_card_holder_name" = "Card Holder Name";
+"txt_card_number" = "Card Number";
+"txt_mmyyyy" = "MM/YYYY";
+"txt_security_code" = "Security Code";
+"txt_cpf_number" = "CPF Number";
+"btn_add" = "ADD";
+"card_no_valid" = "Card number is valid";
+"card_no_invalid" = "Card number is invalid";
+"alert_card_holder_name" = "Please enter card holder name";
+"alert_card_no" = "Please enter card no";
+"alert_card_no_invalid" = "Please enter valid card no";
+"alert_mmyyyy" = "Please enter MM/YYYY";
+"alert_security_code" = "Please enter security code";
+"alert_security_code_invalid" = "Please enter valid security code";
+"alert_cpf_no" = "Please enter CPF number";
+"alert_cpf_no_invalid" = "Please enter valid CPF number";
+"alert_select_credit_card" = "Select credit card";
+
+//OrderCompleteVC
+"lbl_title_order" = "Order Complete";
+"lbl_thank_you" = "THANK YOU!";
+"lbl_your_order_confirmed" = "Your order is confirmed";
+"btn_tap_here" = "TAPE HERE TO GET BOLETO RECIPT";
+"lbl_your_payment_id" = "Your Payment ID";
+"lbl_order_id" = "ORDER_ID";
+"lbl_final_amt" = "Final Amount";
+"lbl_payment_method" = "Payment Method";
+//"txt_email" = "Email";
+
+//AddPromoCode
+"lbl_title_promo_code" = "Add Promo Code";
+"lbl_your_code" = "What´s your code?";
+"lbl_please_add_code" = "Please add promo code further";
+"txt_promo_code" = "Promo code";
+"btn_continue" = "Continue";
+"btn_no_other_time" = "No, other time";
+"alert_promo_code" = "Please enter promo code";
+
+
+
+
+

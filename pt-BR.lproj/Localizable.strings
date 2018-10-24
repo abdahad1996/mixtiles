@@ -1,0 +1,114 @@
+/* 
+  Localizable.strings
+  Mixtiles
+
+  Created by viprak-Dipak on 24/10/18.
+  Copyright © 2018 viprak-Dipak. All rights reserved.
+ PT
+*/
+
+//HomeVc
+"lbl_home_title" = "As telhas são bonitas e prendem facilmente";
+"btn_createaset" = "Criar meus Bricks!";
+
+//HelpVC
+"lbl_help" = "Socorro";
+"lbl_helpdetail" = "Fale conosco sobre qualquer coisa, ou confira alguns questionamentos comuns abaixo";
+"btn_talk_to_us" = "FALE CONOSCO";
+
+//ViewController
+
+"lbl_pick_photo" = "Escolha as imagens";
+"lbl_tab_all_photo" = "Todas as fotos";
+"lbl_tab_whatsapp" = "WhatsApp";
+"lbl_tiles_selected" = "imagens selecionadas";
+"btn_review_tiles" = "Avançar";
+"alert_select_at_least" = "Selecione pelo menos";
+"alert_photos" = "fotos";
+"btn_ok" = "Está bem";
+
+//ReviewAdjustVC
+"lbl_title_review_adjust" = "Revisar & ajustar";
+"lbl_formats" = "Formato";
+"lbl_colors" = "Cores";
+"lbl_add_shipping_address" = "Endereço de envio";
+"lbl_add_credit_card" = "Forma de pagamento";
+"lbl_tiles_for" = "Bricks por";
+"lbl_more_tiles" = "mais telhas";
+"lbl_each" = "cada";
+"lbl_Deliverd_by" = "Entregue por";
+"btn_title_Add_promo_code" = "Adicionar cupom de descoto";
+"lbl_total" = "Total:";
+"btn_confirm_order" = "FINALIZAR COMPRA!";
+"lbl_copies" = "Cópias";
+"lbl_copy" = "cópia de";
+"alert_add_shipping_address" = "Adicionar endereço de envio";
+"alert_add_credit_card_details" = "Adicione detalhes do cartão de crédito";
+"alert_more_tiles_needed" = "Mais telhas necessárias";
+"alert_brickart" = "Ordem Brickart tem que ser de três telhas ou mais";
+
+//AddAddressVC
+"lbl_title_add_address" = "Adicionar endereço";
+"txt_full_name" = "Nome completo";
+"txt_email" = "O email";
+"txt_cell_phone_number" = "Celular";
+"txt_cep_number" = "CEP";
+"txt_street_address" = "Endereço";
+"txt_street_number" = "Número";
+"txt_complement" = "Complemento";
+"txt_neighborhood" = "Vizinhança";
+"txt_city" = "Cidade";
+"txt_state" = "Estado";
+"btn_done" = "FEITO";
+"alert_msg_full_name" = "Por favor digite o nome completo";
+"alert_msg_empty_email" = "Por favor insira o endereço de email";
+"alert_msg_valid_email" = "Por favor insira o endereço de e-mail válido";
+"alert_msg_cell_phone_number" = "Por favor, insira o número do celular";
+"alert_msg_valid_cell_no" = "Por favor, insira o número de celular válido";
+"alert_msg_cep_number" = "Por favor, insira o número CEP";
+"alert_msg_valid_cep_number" = "Por favor insira o número CEP válido";
+"alert_msg_city" = "Por favor insira a cidade";
+"alert_msg_state" = "Por favor, insira o estado";
+"alert_msg_street_number" = "Por favor, insira o número da rua";
+"alert_msg_complement" = "Por favor digite o complemento";
+"alert_msg_neighborhood" = "Por favor entre na vizinhança";
+
+//AddCreditCardVC
+"lbl_title_add_credit_card" = "Adicionar cartão de crédito";
+"txt_card_holder_name" = "Nome do titular";
+"txt_card_number" = "Número do cartão";
+"txt_mmyyyy" = "Validade";
+"txt_security_code" = "Cód. Segurança";
+"txt_cpf_number" = "CPF do titular";
+"btn_add" = "ADICIONAR";
+"card_no_valid" = "O número do cartão é válido";
+"card_no_invalid" = "O número do cartão é inválido";
+"alert_card_holder_name" = "Por favor, insira o nome do titular do cartão";
+"alert_card_no" = "Por favor, digite o cartão não";
+"alert_card_no_invalid" = "Please enter valid card no";
+"alert_mmyyyy" = "Por favor insira MM/YYYY";
+"alert_security_code" = "Por favor insira o código de segurança";
+"alert_security_code_invalid" = "Por favor insira um código de segurança válido";
+"alert_cpf_no" = "Por favor, insira o número do CPF";
+"alert_cpf_no_invalid" = "Por favor, insira um número de CPF válido";
+"alert_select_credit_card" = "Selecione cartão de crédito";
+
+//OrderCompleteVC
+"lbl_title_order" = "Pedido completo";
+"lbl_thank_you" = "OBRIGADO!";
+"lbl_your_order_confirmed" = "Seu pedido é confirmado";
+"btn_tap_here" = "FITA AQUI PARA RECEBER O BOLETO";
+"lbl_your_payment_id" = "Seu ID de pagamento";
+"lbl_order_id" = "ID DO PEDIDO";
+"lbl_final_amt" = "Quantidade final";
+"lbl_payment_method" = "Método de pagamento";
+//"txt_email" = "Email";
+
+//AddPromoCode
+"lbl_title_promo_code" = "Adicionar código promocional";
+"lbl_your_code" = "Qual o código do cupom?";
+"lbl_please_add_code" = "Adicione o cupom de desconto abaixo";
+"txt_promo_code" = "Cupom de desconto";
+"btn_continue" = "Continuar";
+"btn_no_other_time" = "Agora não";
+"alert_promo_code" = "Por favor insira o código promocional";

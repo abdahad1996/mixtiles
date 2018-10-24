@@ -1,0 +1,165 @@
+
+/* Class = "UITextField"; placeholder = "Neighborhood"; ObjectID = "0f2-jr-EMp"; */
+"0f2-jr-EMp.placeholder" = "Neighborhood";
+
+/* Class = "UILabel"; text = "Please add promo code to proceed further"; ObjectID = "24j-TE-4hB"; */
+"24j-TE-4hB.text" = "Please add promo code to proceed further";
+
+/* Class = "UILabel"; text = "Add Address"; ObjectID = "2fB-H5-Ar1"; */
+"2fB-H5-Ar1.text" = "Add Address";
+
+/* Class = "UILabel"; text = "Pick Photos"; ObjectID = "7xn-Wk-NC9"; */
+"7xn-Wk-NC9.text" = "Pick Photos";
+
+/* Class = "UITextField"; placeholder = "Security Code"; ObjectID = "9Tn-VH-W2d"; */
+"9Tn-VH-W2d.placeholder" = "Security Code";
+
+/* Class = "UIButton"; normalTitle = "ADD"; ObjectID = "A2B-Qh-4DE"; */
+"A2B-Qh-4DE.normalTitle" = "ADD";
+
+/* Class = "UILabel"; text = "Tiles are beutiful and attach easily"; ObjectID = "CUk-1J-LXE"; */
+"CUk-1J-LXE.text" = "Tiles are beutiful and attach easily";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "DCp-QK-qdN"; */
+"DCp-QK-qdN.placeholder" = "Full Name";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "DVs-sb-gXh"; */
+"DVs-sb-gXh.text" = "Email";
+
+/* Class = "UILabel"; text = "Add Prome Code"; ObjectID = "EcM-rJ-ezg"; */
+"EcM-rJ-ezg.text" = "Add Prome Code";
+
+/* Class = "UIButton"; normalTitle = "Adjust"; ObjectID = "Eou-f7-4cO"; */
+"Eou-f7-4cO.normalTitle" = "Adjust";
+
+/* Class = "UILabel"; text = "What's your code?"; ObjectID = "Gix-jz-s7c"; */
+"Gix-jz-s7c.text" = "What's your code?";
+
+/* Class = "UILabel"; text = " Copies"; ObjectID = "I0v-n7-ItN"; */
+"I0v-n7-ItN.text" = " Copies";
+
+/* Class = "UITextField"; placeholder = "Cellphone Number"; ObjectID = "Iv8-3D-sAf"; */
+"Iv8-3D-sAf.placeholder" = "Cellphone Number";
+
+/* Class = "UITextField"; placeholder = "CPF number"; ObjectID = "JUm-Oh-8ne"; */
+"JUm-Oh-8ne.placeholder" = "CPF number";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "KBD-ge-sNo"; */
+"KBD-ge-sNo.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "   Review tiles"; ObjectID = "NYm-N8-4hB"; */
+"NYm-N8-4hB.normalTitle" = "   Review tiles";
+
+/* Class = "UILabel"; text = "Payment method"; ObjectID = "Nea-sv-kiQ"; */
+"Nea-sv-kiQ.text" = "Payment method";
+
+/* Class = "UILabel"; text = "Order Complete"; ObjectID = "O0Y-Cl-Rbl"; */
+"O0Y-Cl-Rbl.text" = "Order Complete";
+
+/* Class = "UILabel"; text = "Final Amount"; ObjectID = "OPn-iR-kZ2"; */
+"OPn-iR-kZ2.text" = "Final Amount";
+
+/* Class = "UILabel"; text = "Colors"; ObjectID = "PIH-QK-suD"; */
+"PIH-QK-suD.text" = "Colors";
+
+/* Class = "UILabel"; text = "  0 Tiles Selected"; ObjectID = "QZA-wI-BP2"; */
+"QZA-wI-BP2.text" = "  0 Tiles Selected";
+
+/* Class = "UITextField"; placeholder = "MM / YYYY"; ObjectID = "R3B-lM-skl"; */
+"R3B-lM-skl.placeholder" = "MM / YYYY";
+
+/* Class = "UILabel"; text = "Add Shipping Address"; ObjectID = "RyO-lR-qn0"; */
+"RyO-lR-qn0.text" = "Add Shipping Address";
+
+/* Class = "UILabel"; text = "Thank You!"; ObjectID = "ShG-60-JlZ"; */
+"ShG-60-JlZ.text" = "Thank You!";
+
+/* Class = "UILabel"; text = "Your order is confirmed"; ObjectID = "Vfc-KE-Tgt"; */
+"Vfc-KE-Tgt.text" = "Your order is confirmed";
+
+/* Class = "UITextField"; placeholder = "Card Holder Name"; ObjectID = "VjQ-ET-XRl"; */
+"VjQ-ET-XRl.placeholder" = "Card Holder Name";
+
+/* Class = "UITextField"; placeholder = "Promo code"; ObjectID = "XI8-jP-3GT"; */
+"XI8-jP-3GT.placeholder" = "Promo code";
+
+/* Class = "UILabel"; text = "Add Credit Card"; ObjectID = "XkV-7V-GKi"; */
+"XkV-7V-GKi.text" = "Add Credit Card";
+
+/* Class = "UIButton"; normalTitle = "Remove"; ObjectID = "aAA-Ug-lBx"; */
+"aAA-Ug-lBx.normalTitle" = "Remove";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "c6E-Cd-qT7"; */
+"c6E-Cd-qT7.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "Add Credit Card"; ObjectID = "dDk-Ns-L5G"; */
+"dDk-Ns-L5G.text" = "Add Credit Card";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dRB-21-1lV"; */
+"dRB-21-1lV.text" = "0";
+
+/* Class = "UITextField"; placeholder = "Street Number"; ObjectID = "dt9-ew-L84"; */
+"dt9-ew-L84.placeholder" = "Street Number";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "etN-0D-5ax"; */
+"etN-0D-5ax.placeholder" = "City";
+
+/* Class = "UITextField"; placeholder = "Street Address"; ObjectID = "fUg-EL-XSR"; */
+"fUg-EL-XSR.placeholder" = "Street Address";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "gRo-ei-Fj6"; */
+"gRo-ei-Fj6.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "TALK TO US"; ObjectID = "hyc-Me-jYy"; */
+"hyc-Me-jYy.normalTitle" = "TALK TO US";
+
+/* Class = "UILabel"; text = "Formats"; ObjectID = "irZ-iQ-qOr"; */
+"irZ-iQ-qOr.text" = "Formats";
+
+/* Class = "UIButton"; normalTitle = "TAPE HERE TO GET BOLETO RECIPT"; ObjectID = "jPz-hn-arJ"; */
+"jPz-hn-arJ.normalTitle" = "TAPE HERE TO GET BOLETO RECIPT";
+
+/* Class = "UILabel"; text = "Order ID"; ObjectID = "mMs-R3-O8v"; */
+"mMs-R3-O8v.text" = "Order ID";
+
+/* Class = "UILabel"; text = "Review & Adjust"; ObjectID = "nRB-vl-pIQ"; */
+"nRB-vl-pIQ.text" = "Review & Adjust";
+
+/* Class = "UIButton"; normalTitle = "Create A Set"; ObjectID = "q0k-VP-1pm"; */
+"q0k-VP-1pm.normalTitle" = "Create A Set";
+
+/* Class = "UIButton"; normalTitle = "DONE"; ObjectID = "qFT-P9-tDx"; */
+"qFT-P9-tDx.normalTitle" = "DONE";
+
+/* Class = "UILabel"; text = "Your Payment ID"; ObjectID = "qfU-u4-RT3"; */
+"qfU-u4-RT3.text" = "Your Payment ID";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "qgU-9F-Rtj"; */
+"qgU-9F-Rtj.normalTitle" = "CONTINUE";
+
+/* Class = "UITextField"; placeholder = "Complement"; ObjectID = "qzA-PN-5tZ"; */
+"qzA-PN-5tZ.placeholder" = "Complement";
+
+/* Class = "UITextField"; placeholder = "State"; ObjectID = "r2i-sk-nOj"; */
+"r2i-sk-nOj.placeholder" = "State";
+
+/* Class = "UITextField"; placeholder = "CEP Number"; ObjectID = "rGE-Jd-Orj"; */
+"rGE-Jd-Orj.placeholder" = "CEP Number";
+
+/* Class = "UILabel"; text = "Talk to us about anything, or check out some common qestions below"; ObjectID = "rXt-J6-R8I"; */
+"rXt-J6-R8I.text" = "Talk to us about anything, or check out some common qestions below";
+
+/* Class = "UIButton"; normalTitle = "Dismiss"; ObjectID = "rmK-Ev-iLy"; */
+"rmK-Ev-iLy.normalTitle" = "Dismiss";
+
+/* Class = "UILabel"; text = "Order Complete"; ObjectID = "sXU-oJ-8pl"; */
+"sXU-oJ-8pl.text" = "Order Complete";
+
+/* Class = "UILabel"; text = "Help"; ObjectID = "tRA-ux-Igq"; */
+"tRA-ux-Igq.text" = "Help";
+
+/* Class = "UITextField"; placeholder = "Cara Number"; ObjectID = "tZA-du-Q5w"; */
+"tZA-du-Q5w.placeholder" = "Cara Number";
+
+/* Class = "UIButton"; normalTitle = "CONFIRM ORDER"; ObjectID = "vu8-5o-Hgo"; */
+"vu8-5o-Hgo.normalTitle" = "CONFIRM ORDER";
