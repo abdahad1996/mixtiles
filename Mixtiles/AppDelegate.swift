@@ -4,7 +4,7 @@
 //
 //  Created by viprak-Dipak on 27/08/18.
 //  Copyright © 2018 viprak-Dipak. All rights reserved.
-//
+//  25_10_2018_Dipak last all issues fix
 
 import UIKit
 import IQKeyboardManagerSwift

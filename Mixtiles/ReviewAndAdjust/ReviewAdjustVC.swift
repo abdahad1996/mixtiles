@@ -688,11 +688,11 @@ class ReviewAdjustVC: BaseViewController, UICollectionViewDelegate, UICollection
         let Cnt = Int(CalculateTiles(AryName: arySelectUpdateImg))
         if Cnt >= mimimun_order_quantity {
             if defaults.value(forKey: keydictAddress) == nil{
-                showAlert(titleStr: LocalizedLanguage(key: "lbl_add_shipping_address", languageCode: lanCode), msg: "")
+                showAlert(titleStr: LocalizedLanguage(key: "alert_add_shipping_address", languageCode: lanCode), msg: "")
             }
             else {
                 if self.paymentId.isEmpty {
-                    showAlert(titleStr: LocalizedLanguage(key: "lbl_add_credit_card", languageCode: lanCode), msg: "")
+                    showAlert(titleStr: LocalizedLanguage(key: "alert_add_credit_card_details", languageCode: lanCode), msg: "")
                 }
                 else {
                     if self.paymentId == "bolbradesco" || !self.TokenId.isEmpty {

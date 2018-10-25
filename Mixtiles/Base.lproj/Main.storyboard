@@ -197,10 +197,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-Nc-4EE">
-                                <rect key="frame" x="0.0" y="10" width="320" height="150"/>
+                                <rect key="frame" x="0.0" y="10" width="320" height="160"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_navbar" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-5v-1x1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elz-gG-tkM">
                                         <rect key="frame" x="20" y="30" width="25" height="25"/>
@@ -222,22 +222,23 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to us about anything, or check out some common qestions below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXt-J6-R8I">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to us about anything, or check out some common qestions below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXt-J6-R8I">
                                         <rect key="frame" x="20" y="60" width="295" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="qCu-2v-mIB"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qCu-2v-mIB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyc-Me-jYy">
-                                        <rect key="frame" x="20" y="105" width="100" height="27"/>
+                                        <rect key="frame" x="20" y="105" width="140" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="SeH-CZ-H7c"/>
+                                            <constraint firstAttribute="height" constant="30" id="P0A-qR-nil"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="SeH-CZ-H7c"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <state key="normal" title="TALK TO US">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -258,7 +259,7 @@
                                     <constraint firstAttribute="trailing" secondItem="rXt-J6-R8I" secondAttribute="trailing" constant="5" id="J7T-bX-w7Y"/>
                                     <constraint firstItem="rXt-J6-R8I" firstAttribute="leading" secondItem="gUK-Nc-4EE" secondAttribute="leading" constant="20" id="JGg-2c-SzX"/>
                                     <constraint firstAttribute="bottom" secondItem="nlT-5v-1x1" secondAttribute="bottom" id="QhF-fO-nyb"/>
-                                    <constraint firstAttribute="height" constant="150" id="W9f-3Y-aHA"/>
+                                    <constraint firstAttribute="height" constant="160" id="W9f-3Y-aHA"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hyc-Me-jYy" secondAttribute="trailing" constant="20" symbolic="YES" id="Zx2-6b-hF2"/>
                                     <constraint firstItem="hyc-Me-jYy" firstAttribute="leading" secondItem="gUK-Nc-4EE" secondAttribute="leading" constant="20" id="cW0-uU-E69"/>
                                     <constraint firstAttribute="trailing" secondItem="nlT-5v-1x1" secondAttribute="trailing" id="fSg-5B-ML0"/>
@@ -267,7 +268,7 @@
                                 </constraints>
                             </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DW-W9-oEZ">
-                                <rect key="frame" x="0.0" y="160" width="320" height="408"/>
+                                <rect key="frame" x="0.0" y="170" width="320" height="398"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="zOT-kr-45q" id="tAN-s8-6JR"/>

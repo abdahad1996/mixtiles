@@ -26,7 +26,7 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     let cutterView = KACircleCropCutterView()
     
     let label = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 30))
-    let okButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 30))
+    let okButton = UIButton(frame: CGRect(x: 0, y: 0, width: 90, height: 30))
     let backButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
     
     

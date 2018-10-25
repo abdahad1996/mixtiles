@@ -35,7 +35,6 @@ class HomeVC: BaseViewController,UIGestureRecognizerDelegate, UIWebViewDelegate 
     {
         self.lblTitle.text = LocalizedLanguage(key: "lbl_home_title", languageCode: lanCode)
         self.btnCreateSet.setTitle(LocalizedLanguage(key: "btn_createaset", languageCode: lanCode), for: .normal)
-        
     }
     
     //MARK:- WebView Method

@@ -44,9 +44,8 @@ class ViewController: BaseViewController, CarbonTabSwipeNavigationDelegate {
     {
         self.lblTitles.text = LocalizedLanguage(key: "lbl_pick_photo", languageCode: lanCode)
         self.btnReviewTiles.setTitle("  \(LocalizedLanguage(key: "btn_review_tiles", languageCode: lanCode))", for: .normal)
-        
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         arySelected = appDelegate.getUserDetails() as! [[String : Any]]
         if arySelected.count != 0{
