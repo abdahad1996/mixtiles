@@ -7,108 +7,118 @@
  PT
 */
 
+"alert_missing" = "Desculpe, não encontramos, algo está faltando";
+"alert_network" = "Por favor, se conecte a internet";
+
 //HomeVc
-"lbl_home_title" = "As telhas são bonitas e prendem facilmente";
-"btn_createaset" = "Criar meus Bricks!";
+"lbl_home_title" = "BEM VINDO A BRICKART!";
+"btn_createaset" = "Criar meus Bricks";
 
 //HelpVC
-"lbl_help" = "Socorro";
-"lbl_helpdetail" = "Fale conosco sobre qualquer coisa, ou confira alguns questionamentos comuns abaixo";
-"btn_talk_to_us" = "FALE CONOSCO";
+"lbl_help" = "Ajuda";
+"lbl_helpdetail" = "Veja algumas das princípais perguntas abaixo ou entre em contato através do cha de atendimeto!";
+"btn_talk_to_us" = "Chat de atendimento";
 
 //ViewController
 
 "lbl_pick_photo" = "Escolha as imagens";
 "lbl_tab_all_photo" = "Todas as fotos";
 "lbl_tab_whatsapp" = "WhatsApp";
-"lbl_tiles_selected" = "imagens selecionadas";
-"btn_review_tiles" = "Avançar";
-"alert_select_at_least" = "Selecione pelo menos";
+"lbl_tiles_selected" = "Imagens selecionadas";
+"lbl_addtional_frame" = "Cada Brick adicional sai por ";
+"btn_review_tiles" = "Revisar imagens";
+"alert_select_at_least" = "Por favor, selecione ao menos";
 "alert_photos" = "fotos";
-"btn_ok" = "Está bem";
+"btn_ok" = "OK";
 
 //ReviewAdjustVC
-"lbl_title_review_adjust" = "Revisar & ajustar";
-"lbl_formats" = "Formato";
+"lbl_title_review_adjust" = "Revisão & Ajuste";
+"lbl_formats" = "Formatos";
 "lbl_colors" = "Cores";
-"lbl_add_shipping_address" = "Endereço de envio";
+"lbl_add_shipping_address" = "Endereço de entrega";
 "lbl_add_credit_card" = "Forma de pagamento";
 "lbl_tiles_for" = "Bricks por";
-"lbl_more_tiles" = "mais telhas";
+"lbl_more_tiles" = "mais Bricks";
 "lbl_each" = "cada";
-"lbl_Deliverd_by" = "Entregue por";
-"btn_title_Add_promo_code" = "Adicionar cupom de descoto";
+"lbl_Deliverd_by" = "Estimativa de entrega";
+"btn_title_Add_promo_code" = "Adicionar código promocional";
 "lbl_total" = "Total:";
-"btn_confirm_order" = "FINALIZAR COMPRA!";
-"lbl_copies" = "Cópias";
-"lbl_copy" = "cópia de";
-"alert_add_shipping_address" = "Adicionar endereço de envio";
-"alert_add_credit_card_details" = "Adicione detalhes do cartão de crédito";
+"btn_confirm_order" = "CONFIRMAR PEDIDO";
+"lbl_copies" = "cópias";
+"lbl_copy" = "cópia";
+"alert_add_shipping_address" = "Por favor adicione seu endereço de entrega.";
+"alert_add_credit_card_details" = "Por favor escolha uma forma de pagamento e endereço de entrega.";
 "alert_more_tiles_needed" = "Mais telhas necessárias";
 "alert_brickart" = "Ordem Brickart tem que ser de três telhas ou mais";
+"lbl_adjust_popup" = "Ajustar";
+"lbl_remove_popup" = "Remover";
+"lbl_cancel_popup" = "Cancelar";
 
 //AddAddressVC
 "lbl_title_add_address" = "Adicionar endereço";
 "txt_full_name" = "Nome completo";
-"txt_email" = "O email";
-"txt_cell_phone_number" = "Celular";
+"txt_email" = "Email";
+"txt_cell_phone_number" = "Número de whatsapp";
 "txt_cep_number" = "CEP";
 "txt_street_address" = "Endereço";
 "txt_street_number" = "Número";
 "txt_complement" = "Complemento";
-"txt_neighborhood" = "Vizinhança";
+"txt_neighborhood" = "Bairro";
 "txt_city" = "Cidade";
-"txt_state" = "Estado";
-"btn_done" = "FEITO";
-"alert_msg_full_name" = "Por favor digite o nome completo";
-"alert_msg_empty_email" = "Por favor insira o endereço de email";
-"alert_msg_valid_email" = "Por favor insira o endereço de e-mail válido";
-"alert_msg_cell_phone_number" = "Por favor, insira o número do celular";
+"txt_state" = "UF";
+"btn_done" = "AVANÇAR";
+"alert_msg_full_name" = "Por favor, adicione seu nome completo";
+"alert_msg_empty_email" = "Por favor, adcione seu e-mail";
+"alert_msg_valid_email" = "Por favor, adicione um e-mail válido";
+"alert_msg_cell_phone_number" = "Por favor, adicione um número de celular.";
 "alert_msg_valid_cell_no" = "Por favor, insira o número de celular válido";
-"alert_msg_cep_number" = "Por favor, insira o número CEP";
-"alert_msg_valid_cep_number" = "Por favor insira o número CEP válido";
-"alert_msg_city" = "Por favor insira a cidade";
-"alert_msg_state" = "Por favor, insira o estado";
-"alert_msg_street_number" = "Por favor, insira o número da rua";
-"alert_msg_complement" = "Por favor digite o complemento";
-"alert_msg_neighborhood" = "Por favor entre na vizinhança";
+"alert_msg_cep_number" = "Por favor, adicione um CEP";
+"alert_msg_valid_cep_number" = "Por favor, adicione um CEP válido";
+"alert_msg_city" = "Por favor, adicione uma cidade";
+"alert_msg_state" = "Por favor, adicione um estado";
+"alert_msg_street_number" = "Por favor, adicione o número do seu endereço";
+"alert_msg_complement" = "Por favor, adicione um complemento";
+"alert_msg_neighborhood" = "Por favor, adicione um bairro";
 
 //AddCreditCardVC
 "lbl_title_add_credit_card" = "Adicionar cartão de crédito";
 "txt_card_holder_name" = "Nome do titular";
 "txt_card_number" = "Número do cartão";
-"txt_mmyyyy" = "Validade";
-"txt_security_code" = "Cód. Segurança";
+"txt_mmyyyy" = "Mês/Ano";
+"txt_security_code" = "Código de segurança";
 "txt_cpf_number" = "CPF do titular";
-"btn_add" = "ADICIONAR";
+"btn_add" = "AVANÇAR";
 "card_no_valid" = "O número do cartão é válido";
 "card_no_invalid" = "O número do cartão é inválido";
-"alert_card_holder_name" = "Por favor, insira o nome do titular do cartão";
-"alert_card_no" = "Por favor, digite o cartão não";
-"alert_card_no_invalid" = "Please enter valid card no";
-"alert_mmyyyy" = "Por favor insira MM/YYYY";
-"alert_security_code" = "Por favor insira o código de segurança";
+"alert_card_holder_name" = "Por favor, adicione o nome do titular";
+"alert_card_no" = "Por favor adicione o número do cartão";
+"alert_card_no_invalid" = "Por favor, insira um cartão válido";
+"alert_mmyyyy" = "Por favor adicione a data de validade";
+"alert_security_code" = "Por favor adicione o código de segurança";
 "alert_security_code_invalid" = "Por favor insira um código de segurança válido";
-"alert_cpf_no" = "Por favor, insira o número do CPF";
+"alert_cpf_no" = "Por favor adicione um CPF válido";
 "alert_cpf_no_invalid" = "Por favor, insira um número de CPF válido";
-"alert_select_credit_card" = "Selecione cartão de crédito";
+"alert_select_credit_card" = "Por favor selecione uma bandeira";
 
 //OrderCompleteVC
-"lbl_title_order" = "Pedido completo";
-"lbl_thank_you" = "OBRIGADO!";
-"lbl_your_order_confirmed" = "Seu pedido é confirmado";
-"btn_tap_here" = "FITA AQUI PARA RECEBER O BOLETO";
-"lbl_your_payment_id" = "Seu ID de pagamento";
-"lbl_order_id" = "ID DO PEDIDO";
-"lbl_final_amt" = "Quantidade final";
-"lbl_payment_method" = "Método de pagamento";
+"lbl_title_order" = "PEDIDO FINALIZADO";
+"lbl_thank_you" = "Obrigado!!";
+"lbl_your_order_confirmed" = "Seu pedido foi confirmado";
+"btn_tap_here" = "Digite aqui para obter o recibo do Boleto";
+"lbl_your_payment_id" = "ID do seu pagamento";
+"lbl_order_id" = "ID do pedido";
+"lbl_final_amt" = "Total do pedido";
+"lbl_payment_method" = "Forma de pagamento";
 //"txt_email" = "Email";
 
 //AddPromoCode
-"lbl_title_promo_code" = "Adicionar código promocional";
-"lbl_your_code" = "Qual o código do cupom?";
-"lbl_please_add_code" = "Adicione o cupom de desconto abaixo";
+"lbl_title_promo_code" = "Adicionar cupom de desconto";
+"lbl_your_code" = "Qual o seu cupom de desconto?";
+"lbl_please_add_code" = "Por favor, adicione um cupom de desconto para avançar";
 "txt_promo_code" = "Cupom de desconto";
-"btn_continue" = "Continuar";
-"btn_no_other_time" = "Agora não";
+"btn_continue" = "AVANÇAR";
+"btn_no_other_time" = "Voltar";
 "alert_promo_code" = "Por favor insira o código promocional";
+
+//adjust & crop screen
+"lbl_title_adjust_crop" = "Ajustar & Cortar";

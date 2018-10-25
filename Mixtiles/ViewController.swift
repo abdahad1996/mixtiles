@@ -21,7 +21,8 @@ class ViewController: BaseViewController, CarbonTabSwipeNavigationDelegate {
     @IBOutlet weak var VwTabView: UIView!
     @IBOutlet weak var lblSelectPhotos: UILabel!
     @IBOutlet weak var btnReviewTiles: UIButton!
-   
+    @IBOutlet weak var lblAdditional: UILabel!
+    
     var carbonTabSwipeNavigation = CarbonTabSwipeNavigation()
     
     var appDelegate : AppDelegate = AppDelegate()
@@ -44,21 +45,24 @@ class ViewController: BaseViewController, CarbonTabSwipeNavigationDelegate {
         self.lblTitles.text = LocalizedLanguage(key: "lbl_pick_photo", languageCode: lanCode)
         self.btnReviewTiles.setTitle("  \(LocalizedLanguage(key: "btn_review_tiles", languageCode: lanCode))", for: .normal)
         
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         arySelected = appDelegate.getUserDetails() as! [[String : Any]]
         if arySelected.count != 0{
 //            let totalSelectTiles = CalculateTiles(AryName: arySelected)
-            self.lblSelectPhotos.text = "  \(arySelected.count) \(LocalizedLanguage(key: "lbl_tiles_selected", languageCode: lanCode))"
+            self.lblSelectPhotos.text = "\(arySelected.count) \(LocalizedLanguage(key: "lbl_tiles_selected", languageCode: lanCode))"
         }else{
-            self.lblSelectPhotos.text = "  0 \(LocalizedLanguage(key: "lbl_tiles_selected", languageCode: lanCode))"
+            self.lblSelectPhotos.text = "0 \(LocalizedLanguage(key: "lbl_tiles_selected", languageCode: lanCode))"
         }
         
         if let PriceDic = defaults.object(forKey: "price") as? NSDictionary {
-            if let tempItem = PriceDic.value(forKey: "additional_price") as? Double { additional_price = tempItem }
+            if let tempItem = PriceDic.value(forKey: "additional_price") as? Double
+                { additional_price = tempItem }
             if let tempItem = PriceDic.value(forKey: "mimimun_order_quantity") as? Int { mimimun_order_quantity = tempItem }
             if let tempItem = PriceDic.value(forKey: "price_for_moq") as? Double { price_for_moq = tempItem }
         }
+        self.lblAdditional.text = LocalizedLanguage(key: "lbl_addtional_frame", languageCode: lanCode) + "\(additional_price)"
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -96,7 +100,7 @@ class ViewController: BaseViewController, CarbonTabSwipeNavigationDelegate {
 //        defaults.synchronize()
 //        let arySelectOnebyOne = appDelegate.getUserDetails() as! [[String:Any]]
 //        let totalSelectTile = CalculateTiles(AryName: arySelectOnebyOne)
-        self.lblSelectPhotos.text = "  \(Count) \(LocalizedLanguage(key: "lbl_tiles_selected", languageCode: lanCode))"
+        self.lblSelectPhotos.text = "\(Count) \(LocalizedLanguage(key: "lbl_tiles_selected", languageCode: lanCode))"
     }
     func checkPhotoLibraryPermission() {
         let status = PHPhotoLibrary.authorizationStatus()

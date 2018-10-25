@@ -62,6 +62,11 @@ class ReviewAdjustVC: BaseViewController, UICollectionViewDelegate, UICollection
     @IBOutlet weak var lblAddCreditCard: UILabel!
     @IBOutlet weak var btnAddPromoCode: UIButton!
     
+    @IBOutlet weak var btnAdjust: UIButton!
+    @IBOutlet weak var btnRemove: UIButton!
+    @IBOutlet weak var btnDismiss: UIButton!
+    
+    
     let locationManager = CLLocationManager()
     
     var arySelectImg = [[String:Any]]()
@@ -160,7 +165,7 @@ class ReviewAdjustVC: BaseViewController, UICollectionViewDelegate, UICollection
         
         formatter.dateFormat = "yyyy-MM-dd"
         ShippingDate = formatter.string(from: dateindate!)
-
+        lblShipping.text = "$0.0"
         
         self.lblDeliveryDate.text = "\(LocalizedLanguage(key: "lbl_Deliverd_by", languageCode: lanCode)) " + dateinstring
     }
@@ -172,6 +177,9 @@ class ReviewAdjustVC: BaseViewController, UICollectionViewDelegate, UICollection
         self.lblAcrilico.text = LocalizedLanguage(key: "lbl_colors", languageCode: lanCode)
         self.lblAddShhippingAdd.text = LocalizedLanguage(key: "lbl_add_shipping_address", languageCode: lanCode)
         self.lblAddCreditCard.text = LocalizedLanguage(key: "lbl_add_credit_card", languageCode: lanCode)
+        self.btnAdjust.setTitle(LocalizedLanguage(key: "lbl_adjust_popup", languageCode: lanCode), for: .normal)
+        self.btnRemove.setTitle(LocalizedLanguage(key: "lbl_remove_popup", languageCode: lanCode), for: .normal)
+        self.btnDismiss.setTitle(LocalizedLanguage(key: "lbl_cancel_popup", languageCode: lanCode), for: .normal)
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
@@ -309,7 +317,7 @@ class ReviewAdjustVC: BaseViewController, UICollectionViewDelegate, UICollection
                 
                 self.lblDeliveryDate.text = "\(LocalizedLanguage(key: "lbl_Deliverd_by", languageCode: lanCode)) " + dateinstring
             }
-            self.lblShipping.text = self.ShippingPrice
+            self.lblShipping.text = "$\(self.ShippingPrice)"
             self.lblFinalAmount.text = "\(LocalizedLanguage(key: "lbl_total", languageCode: lanCode)) $\(Total + shippingCharge)"
         }
     }

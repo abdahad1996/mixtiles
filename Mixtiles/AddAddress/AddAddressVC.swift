@@ -275,9 +275,11 @@ class AddAddressVC: BaseViewController, UITextFieldDelegate {
             showAlert(titleStr: LocalizedLanguage(key: "alert_msg_valid_cep_number", languageCode: lanCode), msg: "")
         }else if self.txtStreetAddress.text!.isEmpty{
             showAlert(titleStr: LocalizedLanguage(key: "alert_msg_street_number", languageCode: lanCode), msg: "")
-        }else if self.txtComplement.text!.isEmpty{
-            showAlert(titleStr: LocalizedLanguage(key: "alert_msg_complement", languageCode: lanCode), msg: "")
-        }else if self.txtNeighborhood.text!.isEmpty{
+        }
+//        else if self.txtComplement.text!.isEmpty{
+//            showAlert(titleStr: LocalizedLanguage(key: "alert_msg_complement", languageCode: lanCode), msg: "")
+//        }
+        else if self.txtNeighborhood.text!.isEmpty{
             showAlert(titleStr: LocalizedLanguage(key: "alert_msg_neighborhood", languageCode: lanCode), msg: "")
         }else if self.txtStreeNo.text!.isEmpty{
             showAlert(titleStr: LocalizedLanguage(key: "alert_msg_street_number", languageCode: lanCode), msg: "")

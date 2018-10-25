@@ -78,12 +78,13 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         cutterView.frame.size.width = cutterView.frame.size.height
         
         //Add the label and buttons
-        label.text = "Adjust & Crop"
+        label.text = LocalizedLanguage(key: "lbl_title_adjust_crop", languageCode: lanCode)
+//        label.text = "Adjust & Crop"
         label.textAlignment = .center
         label.textColor = UIColor.white
         label.font = label.font.withSize(17)
         
-        okButton.setTitle("DONE", for: UIControlState())
+        okButton.setTitle(LocalizedLanguage(key: "btn_done", languageCode: lanCode), for: UIControlState())
         okButton.setTitleColor(UIColor.white, for: UIControlState())
         okButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
         okButton.addTarget(self, action: #selector(didTapOk), for: .touchUpInside)
