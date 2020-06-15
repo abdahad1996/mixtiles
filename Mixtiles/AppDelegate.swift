@@ -9,47 +9,74 @@
 import UIKit
 import IQKeyboardManagerSwift
 import UserNotifications
+import Firebase
+import FBSDKCoreKit
+import AppseeAnalytics
+import OneSignal
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate,OSSubscriptionObserver {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        UIApplication.shared.statusBarStyle = .lightContent
-        IQKeyboardManager.sharedManager().enable = true
-        IQKeyboardManager.sharedManager().toolbarPreviousNextAllowedClasses = [UIScrollView.self, UIView.self]
-        self.initFreshchatSDK()
+     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        FBSDKSettings.setAutoLogAppEventsEnabled(true)
+        FirebaseApp.configure()
+        Fabric.with([Crashlytics.self])
+        Appsee.start()
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarPreviousNextAllowedClasses = [UIScrollView.self, UIView.self]
+        initFreshchatSDK()
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
         
+        OneSignal.initWithLaunchOptions(launchOptions,
+                                        appId: "e3e84384-8ad6-41f0-b93f-15f60c33c1eb",
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+        
+        OneSignal.add(self as OSSubscriptionObserver)
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+                
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options:[.badge, .alert, .sound]) { (granted, error) in
             // Enable or disable features based on authorization.
         }
         application.registerForRemoteNotifications()
-        let langStr = Locale.current.languageCode
-        
         lanCode = "pt-BR"
         
         return true
     }
+    
+    func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges!) {
+        if !stateChanges.from.subscribed && stateChanges.to.subscribed {
+            UserDefaults.standard.setValue(stateChanges.to.userId, forKey: "onesignalUID")
+            print(stateChanges.to.userId)
+        }
+    }
 
     func initFreshchatSDK() {
+        //Dharmik
+//        let freshchatConfig : FreshchatConfig = FreshchatConfig.init(appID: "2f0f6aae-9d46-4a4b-be31-90f1565ded44", andAppKey: "bd0ba7f4-fc75-47b2-8af7-571a3bc0934f")
+        
         let freshchatConfig : FreshchatConfig = FreshchatConfig.init(appID: "26afb2ef-2666-431b-bb64-6d3b3dbddb8d", andAppKey: "a94ea6b9-bef0-45d1-90df-363beed530c2")
         
-//        let freshchatConfig : FreshchatConfig = FreshchatConfig.init(appID: "f391fcdc-8b65-4a7a-810b-3d77b3bc4628", andAppKey: "35a88418-d9a9-4dbc-b56f-813550bb1063")
-        
-        freshchatConfig.gallerySelectionEnabled = true; // set NO to disable picture selection for messaging via gallery
-        freshchatConfig.cameraCaptureEnabled = true; // set NO to disable picture selection for messaging via camera
-        freshchatConfig.showNotificationBanner = true; // set to NO if you don't want to show the in-app notification banner upon receiving a new message while the app is open
-        
+        freshchatConfig.gallerySelectionEnabled = true;
+        freshchatConfig.cameraCaptureEnabled = true;
+        freshchatConfig.teamMemberInfoVisible = true;
+        freshchatConfig.showNotificationBanner = true;
         freshchatConfig.themeName = "FCTheme.plist"
+        freshchatConfig.stringsBundle = "FCCustomLocalization"
         Freshchat.sharedInstance().initWith(freshchatConfig)
-        
     }
     
-    
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print("APNs device token: \(deviceTokenString)")
+        
         Freshchat.sharedInstance().setPushRegistrationToken(deviceToken)
     }
     
@@ -60,9 +87,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        if Freshchat.sharedInstance().isFreshchatNotification(notification.request.content.userInfo){
+        
+        if Freshchat.sharedInstance().isFreshchatNotification(notification.request.content.userInfo) {
             Freshchat.sharedInstance().handleRemoteNotification(notification.request.content.userInfo, andAppstate: UIApplication.shared.applicationState)
-        }else{
+        }
+        else{
             completionHandler([.alert, .sound, .badge])
         }
     }
@@ -70,28 +99,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if Freshchat.sharedInstance().isFreshchatNotification(response.notification.request.content.userInfo){
              Freshchat.sharedInstance().handleRemoteNotification(response.notification.request.content.userInfo, andAppstate: UIApplication.shared.applicationState) //Handled for freshchat notifications
-        }else{
+        }
+        else{
             completionHandler()//For other notifications
         }
     }
-    func getUserDetails() -> NSMutableArray
-    {
-//        if defaults.value(forKey: keyarymain) != nil{
-//            let userData = defaults.value(forKey: keyarymain) as! NSArray
-//           let arySelected = NSMutableArray(array: userData)
-//            return arySelected
-//        }else{
-//            return []
-//        }
+    
+    class NotificationService: UNNotificationServiceExtension {
+        
+        var contentHandler: ((UNNotificationContent) -> Void)?
+        var receivedRequest: UNNotificationRequest!
+        var bestAttemptContent: UNMutableNotificationContent?
+        
+        override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+            self.receivedRequest = request;
+            self.contentHandler = contentHandler
+            bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
+            
+            if let bestAttemptContent = bestAttemptContent {
+                OneSignal.didReceiveNotificationExtensionRequest(self.receivedRequest, with: self.bestAttemptContent)
+                contentHandler(bestAttemptContent)
+            }
+        }
+        
+        override func serviceExtensionTimeWillExpire() {
+            // Called just before the extension will be terminated by the system.
+            // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
+            if let contentHandler = contentHandler, let bestAttemptContent =  bestAttemptContent {
+                OneSignal.serviceExtensionTimeWillExpireRequest(self.receivedRequest, with: self.bestAttemptContent)
+                contentHandler(bestAttemptContent)
+            }
+        }
+    }
+    
+    func getUserDetails() -> NSMutableArray {
+        
         if let userData = UserDefaults.standard.object(forKey: keyarymain) as? Data{
             let arySelect = NSKeyedUnarchiver.unarchiveObject(with: userData) as! NSArray
             let arySelected = NSMutableArray(array: arySelect)
             return arySelected
-
-        }else{
+        }
+        else {
             return []
         }
-        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -106,21 +156,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        NotificationCenter.default.post(name: Notification.Name("UserLoggedIn"), object: nil)
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         var freahchatUnreadCount = Int()
         Freshchat.sharedInstance().unreadCount { (unreadCount) in
             freahchatUnreadCount = unreadCount
         }
+        
         UIApplication.shared.applicationIconBadgeNumber = freahchatUnreadCount;
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

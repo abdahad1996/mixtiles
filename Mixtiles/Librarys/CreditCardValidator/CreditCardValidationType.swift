@@ -13,10 +13,12 @@ public func ==(lhs: CreditCardValidationType, rhs: CreditCardValidationType) -> 
 
 public struct CreditCardValidationType: Equatable {
     
+    
     public var name: String
     
     public var regex: String
-
+    
+    
     public init(dict: [String: Any]) {
         if let name = dict["name"] as? String {
             self.name = name

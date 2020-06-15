@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0166FE9F228D28CF00B415FE /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0166FE9E228D28CF00B415FE /* Extention.swift */; };
 		6A5A3D30C41C30B6916EB2F6 /* Pods_Mixtiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE32695498CDFFE8E41F88E /* Pods_Mixtiles.framework */; };
 		8725C1EE2133BE0800802755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1ED2133BE0800802755 /* AppDelegate.swift */; };
 		8725C1F02133BE0800802755 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1EF2133BE0800802755 /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		8725C1F82133BE0A00802755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1F62133BE0A00802755 /* LaunchScreen.storyboard */; };
 		8725C2002133CE7E00802755 /* imgColl_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1FF2133CE7E00802755 /* imgColl_Cell.swift */; };
 		873491322158BBF600189D4D /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873491312158BBF600189D4D /* ColorCell.swift */; };
-		873E1CFA21424DDC00322534 /* framevideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 873E1CF921424DDC00322534 /* framevideo.mp4 */; };
 		873EE45321520DA40029A3F0 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873EE45221520DA30029A3F0 /* DeviceModel.swift */; };
 		873F48F1213F8AF100E56649 /* ApiClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F48F0213F8AF100E56649 /* ApiClass.swift */; };
 		873F48F4213F8D1700E56649 /* getCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F48F3213F8D1700E56649 /* getCardResponse.swift */; };
@@ -43,11 +43,17 @@
 		87FED1BE2137B82D00B716DF /* ReviewAdjustVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FED1BD2137B82D00B716DF /* ReviewAdjustVC.swift */; };
 		87FED1C02137B84200B716DF /* Review_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FED1BF2137B84200B716DF /* Review_Cell.swift */; };
 		DF046E8A216F5A8000B0800A /* postal-codes.json in Resources */ = {isa = PBXBuildFile; fileRef = DF046E89216F5A8000B0800A /* postal-codes.json */; };
+		DF1A71CA221D217600D7E738 /* AppseeAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1A71C9221D217500D7E738 /* AppseeAnalytics.framework */; };
 		DF1F41BB2170BCDD000DC256 /* BoletoOrderCompletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F41BA2170BCDD000DC256 /* BoletoOrderCompletVC.swift */; };
+		DF2C500321A3F8F8001FD0B8 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF2C4FF821A3F8F5001FD0B8 /* OpenSans-Bold.ttf */; };
+		DF2C500721A3F8F8001FD0B8 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF2C4FFC21A3F8F5001FD0B8 /* OpenSans-Regular.ttf */; };
 		DF681105216B8A1700F5CAE9 /* ApiUtillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF681104216B8A1600F5CAE9 /* ApiUtillity.swift */; };
+		DF7F75762190242E0042D001 /* FCCustomLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF7F75752190242E0042D001 /* FCCustomLocalization.bundle */; };
+		DF8D9D0B21D4A31800D3A00E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF8D9D0A21D4A31800D3A00E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0166FE9E228D28CF00B415FE /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		3CF68EFC944D2542F1F2CA13 /* Pods-Mixtiles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixtiles.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mixtiles/Pods-Mixtiles.release.xcconfig"; sourceTree = "<group>"; };
 		6D4B288F2E6F6418D8F5F033 /* Pods-Mixtiles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixtiles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mixtiles/Pods-Mixtiles.debug.xcconfig"; sourceTree = "<group>"; };
 		8725C1EA2133BE0800802755 /* Mixtiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixtiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +65,6 @@
 		8725C1F92133BE0A00802755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8725C1FF2133CE7E00802755 /* imgColl_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgColl_Cell.swift; sourceTree = "<group>"; };
 		873491312158BBF600189D4D /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
-		873E1CF921424DDC00322534 /* framevideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = framevideo.mp4; sourceTree = "<group>"; };
 		873EE45221520DA30029A3F0 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		873F48F0213F8AF100E56649 /* ApiClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClass.swift; sourceTree = "<group>"; };
 		873F48F3213F8D1700E56649 /* getCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getCardResponse.swift; sourceTree = "<group>"; };
@@ -95,8 +100,13 @@
 		87FED1BF2137B84200B716DF /* Review_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review_Cell.swift; sourceTree = "<group>"; };
 		8CE32695498CDFFE8E41F88E /* Pods_Mixtiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixtiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF046E89216F5A8000B0800A /* postal-codes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "postal-codes.json"; sourceTree = "<group>"; };
+		DF1A71C9221D217500D7E738 /* AppseeAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppseeAnalytics.framework; sourceTree = "<group>"; };
 		DF1F41BA2170BCDD000DC256 /* BoletoOrderCompletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoletoOrderCompletVC.swift; sourceTree = "<group>"; };
+		DF2C4FF821A3F8F5001FD0B8 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DF2C4FFC21A3F8F5001FD0B8 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DF681104216B8A1600F5CAE9 /* ApiUtillity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtillity.swift; sourceTree = "<group>"; };
+		DF7F75752190242E0042D001 /* FCCustomLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FCCustomLocalization.bundle; sourceTree = "<group>"; };
+		DF8D9D0A21D4A31800D3A00E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 			files = (
 				87CAF24D2150C026009AA491 /* UserNotifications.framework in Frameworks */,
 				6A5A3D30C41C30B6916EB2F6 /* Pods_Mixtiles.framework in Frameworks */,
+				DF1A71CA221D217600D7E738 /* AppseeAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +145,7 @@
 		8725C1E12133BE0800802755 = {
 			isa = PBXGroup;
 			children = (
-				87540E8721803A6200AEC4DC /* Localizable.strings */,
+				DF7F75752190242E0042D001 /* FCCustomLocalization.bundle */,
 				8725C1EC2133BE0800802755 /* Mixtiles */,
 				8725C1EB2133BE0800802755 /* Products */,
 				78ECD99123F68A9BEFEB6FFB /* Pods */,
@@ -154,38 +165,30 @@
 			isa = PBXGroup;
 			children = (
 				87CAF24B2150BFA7009AA491 /* Mixtiles.entitlements */,
-				8742A9512141209E00E9AD2F /* Home */,
-				8742A94E214119E400E9AD2F /* HelpController */,
-				873F48F2213F8CF900E56649 /* Models */,
-				873F6D7E213E985900C23E59 /* OrderConfirm */,
-				DF1F41BC2170BCE9000DC256 /* BoletoOrderCompletVC */,
-				873F6D76213E8D8000C23E59 /* PromoCode */,
-				873F6D79213E92BB00C23E59 /* AddCreditCard */,
-				8786FFC1213E5DD900F05CC6 /* AddAddress */,
-				87FED1BC2137B7CC00B716DF /* ReviewAndAdjust */,
+				873F48F2213F8CF900E56649 /* Model */,
 				87CE73AD213425E200397999 /* Global */,
 				87CE73AC2134258800397999 /* Librarys */,
-				8725C1ED2133BE0800802755 /* AppDelegate.swift */,
-				8725C1EF2133BE0800802755 /* ViewController.swift */,
-				87CE73A62133FC9B00397999 /* ImagesVC.swift */,
-				8725C1FF2133CE7E00802755 /* imgColl_Cell.swift */,
-				8725C1F12133BE0800802755 /* Main.storyboard */,
+				DF1A71CB221D23AD00D7E738 /* View */,
+				DF1A71CC221D23B900D7E738 /* Controller */,
 				8725C1F42133BE0A00802755 /* Assets.xcassets */,
-				8725C1F62133BE0A00802755 /* LaunchScreen.storyboard */,
+				8725C1ED2133BE0800802755 /* AppDelegate.swift */,
+				87540E8721803A6200AEC4DC /* Localizable.strings */,
 				8725C1F92133BE0A00802755 /* Info.plist */,
+				DF8D9D0A21D4A31800D3A00E /* GoogleService-Info.plist */,
+				DF1A71C9221D217500D7E738 /* AppseeAnalytics.framework */,
 				87CE73A82134258100397999 /* Mixtiles-Bridging-Header.h */,
 			);
 			path = Mixtiles;
 			sourceTree = "<group>";
 		};
-		873F48F2213F8CF900E56649 /* Models */ = {
+		873F48F2213F8CF900E56649 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				87CAF24E2150FEB7009AA491 /* card.json */,
 				873F48F3213F8D1700E56649 /* getCardResponse.swift */,
 				874E973C2143EFD70012DC6F /* sendtilesinfo.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		873F6D76213E8D8000C23E59 /* PromoCode */ = {
@@ -259,6 +262,7 @@
 		87CE73AC2134258800397999 /* Librarys */ = {
 			isa = PBXGroup;
 			children = (
+				DF2C4FF221A3F8F5001FD0B8 /* Open_Sans */,
 				DF046E89216F5A8000B0800A /* postal-codes.json */,
 				8783A06D214673BD006E3C6C /* CropViewController */,
 				87839FAD21466D69006E3C6C /* FCTheme.plist */,
@@ -276,8 +280,8 @@
 				87CE73AE213427F000397999 /* BaseViewController.swift */,
 				87F9E99A2136975F00EE0C20 /* Constants.swift */,
 				873F48F0213F8AF100E56649 /* ApiClass.swift */,
-				873E1CF921424DDC00322534 /* framevideo.mp4 */,
 				873EE45221520DA30029A3F0 /* DeviceModel.swift */,
+				0166FE9E228D28CF00B415FE /* Extention.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -292,12 +296,64 @@
 			path = ReviewAndAdjust;
 			sourceTree = "<group>";
 		};
+		DF0AF06C21AD13C9008784FA /* ImagesVC */ = {
+			isa = PBXGroup;
+			children = (
+				87CE73A62133FC9B00397999 /* ImagesVC.swift */,
+				8725C1FF2133CE7E00802755 /* imgColl_Cell.swift */,
+			);
+			path = ImagesVC;
+			sourceTree = "<group>";
+		};
+		DF0AF06D21AD13DD008784FA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8725C1EF2133BE0800802755 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DF1A71CB221D23AD00D7E738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8725C1F12133BE0800802755 /* Main.storyboard */,
+				8725C1F62133BE0A00802755 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF1A71CC221D23B900D7E738 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8742A9512141209E00E9AD2F /* Home */,
+				8742A94E214119E400E9AD2F /* HelpController */,
+				873F6D7E213E985900C23E59 /* OrderConfirm */,
+				DF1F41BC2170BCE9000DC256 /* BoletoOrderCompletVC */,
+				873F6D76213E8D8000C23E59 /* PromoCode */,
+				873F6D79213E92BB00C23E59 /* AddCreditCard */,
+				8786FFC1213E5DD900F05CC6 /* AddAddress */,
+				87FED1BC2137B7CC00B716DF /* ReviewAndAdjust */,
+				DF0AF06D21AD13DD008784FA /* ViewController */,
+				DF0AF06C21AD13C9008784FA /* ImagesVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DF1F41BC2170BCE9000DC256 /* BoletoOrderCompletVC */ = {
 			isa = PBXGroup;
 			children = (
 				DF1F41BA2170BCDD000DC256 /* BoletoOrderCompletVC.swift */,
 			);
 			path = BoletoOrderCompletVC;
+			sourceTree = "<group>";
+		};
+		DF2C4FF221A3F8F5001FD0B8 /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C4FF821A3F8F5001FD0B8 /* OpenSans-Bold.ttf */,
+				DF2C4FFC21A3F8F5001FD0B8 /* OpenSans-Regular.ttf */,
+			);
+			path = Open_Sans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,8 +367,9 @@
 				8725C1E62133BE0800802755 /* Sources */,
 				8725C1E72133BE0800802755 /* Frameworks */,
 				8725C1E82133BE0800802755 /* Resources */,
-				C64A7A696A96060AB91E4D0D /* [CP] Embed Pods Frameworks */,
 				65271ECABA782C124FD5D976 /* [CP] Copy Pods Resources */,
+				DF3AE71621881B1B009A7BA3 /* ShellScript */,
+				C64A7A696A96060AB91E4D0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +412,7 @@
 				en,
 				Base,
 				"pt-BR",
+				br,
 			);
 			mainGroup = 8725C1E12133BE0800802755;
 			productRefGroup = 8725C1EB2133BE0800802755 /* Products */;
@@ -373,12 +431,15 @@
 			files = (
 				8725C1F82133BE0A00802755 /* LaunchScreen.storyboard in Resources */,
 				87CAF24F2150FEB7009AA491 /* card.json in Resources */,
+				DF2C500321A3F8F8001FD0B8 /* OpenSans-Bold.ttf in Resources */,
+				DF7F75762190242E0042D001 /* FCCustomLocalization.bundle in Resources */,
 				8725C1F52133BE0A00802755 /* Assets.xcassets in Resources */,
+				DF8D9D0B21D4A31800D3A00E /* GoogleService-Info.plist in Resources */,
 				DF046E8A216F5A8000B0800A /* postal-codes.json in Resources */,
+				DF2C500721A3F8F8001FD0B8 /* OpenSans-Regular.ttf in Resources */,
 				87839FAE21466D69006E3C6C /* FCTheme.plist in Resources */,
 				87540E8521803A6200AEC4DC /* Localizable.strings in Resources */,
 				8725C1F32133BE0800802755 /* Main.storyboard in Resources */,
-				873E1CFA21424DDC00322534 /* framevideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,21 +451,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-resources.sh",
-				"${PODS_ROOT}/FreshchatSDK/FreshchatSDK/FCResources.bundle",
-				"${PODS_ROOT}/FreshchatSDK/FreshchatSDK/FreshchatModels.bundle",
-				"${PODS_ROOT}/FreshchatSDK/FreshchatSDK/FCLocalization.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FCResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FreshchatModels.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FCLocalization.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C64A7A696A96060AB91E4D0D /* [CP] Embed Pods Frameworks */ = {
@@ -412,38 +468,30 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CPF-CNPJ-Validator/CPF_CNPJ_Validator.framework",
-				"${BUILT_PRODUCTS_DIR}/CarbonKit/CarbonKit.framework",
-				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyToolTip/SwiftyToolTip.framework",
-				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CPF_CNPJ_Validator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CarbonKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyToolTip.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixtiles/Pods-Mixtiles-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DF3AE71621881B1B009A7BA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		E47C531309E2DD2AC316C43A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -496,6 +544,7 @@
 				87FED1C02137B84200B716DF /* Review_Cell.swift in Sources */,
 				87B1565E214296240026A2D5 /* CreditCardValidator.swift in Sources */,
 				8725C1EE2133BE0800802755 /* AppDelegate.swift in Sources */,
+				0166FE9F228D28CF00B415FE /* Extention.swift in Sources */,
 				87CE73AF213427F000397999 /* BaseViewController.swift in Sources */,
 				8786FFC3213E5DFE00F05CC6 /* AddAddressVC.swift in Sources */,
 			);
@@ -570,6 +619,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 345EW53RYW;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -586,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -631,6 +681,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 345EW53RYW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -641,7 +692,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -658,23 +709,33 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Mixtiles/Mixtiles.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 345EW53RYW;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A69RB3UTHN;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mixtiles",
+				);
 				INFOPLIST_FILE = Mixtiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.viprak.brickart;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brickart.theapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ba651f69-65d3-46bd-974c-5c03cfa08b65";
-				PROVISIONING_PROFILE_SPECIFIER = BrickartDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mixtiles/Mixtiles-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -687,22 +748,32 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Mixtiles/Mixtiles.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 345EW53RYW;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A69RB3UTHN;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mixtiles",
+				);
 				INFOPLIST_FILE = Mixtiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.viprak.brickart;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brickart.theapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ba651f69-65d3-46bd-974c-5c03cfa08b65";
-				PROVISIONING_PROFILE_SPECIFIER = BrickartDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mixtiles/Mixtiles-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -4,19 +4,27 @@
 target 'Mixtiles' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  
   pod 'SVProgressHUD'
   pod 'CarbonKit'
   pod 'TextFieldEffects'
-  pod 'IQKeyboardManagerSwift', '5.0.0'
-  pod 'Alamofire', '~> 4.4'
-  pod 'SWXMLHash', '~> 4.0.0'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire'
   pod 'DropDown'
-  pod 'SDWebImage', '~> 4.0'
+  pod 'SDWebImage'
+  pod 'CropViewController'
   pod 'CPF-CNPJ-Validator'
   pod 'FreshchatSDK'
-  pod 'CropViewController'
-  pod 'SwiftyToolTip'
+  pod 'SWXMLHash', '~> 4.0.0'
   
+  pod 'Firebase/Core'
+  pod 'Fabric', '~> 1.9.0'
+  pod 'Crashlytics', '~> 3.12.0'
+  pod 'FacebookSDK'
+  pod 'OneSignal'
+  
+  pod 'CardIO'
+#  pod 'SwiftyToolTip'
 #  pod 'AMPopTip'
 #  pod 'ImageSlideshow'
 #  pod "CCValidator"

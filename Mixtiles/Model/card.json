@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "id": "visa",
+      "name": "Visa",
+      "img": "img_visa_card",
+      "card_length": 16,
+      "pattern": "^4[0-9]{6,}([0-9]{3})?$",
+      "cvvlength": 3
+    },{
+      "id": "master",
+      "name": "Mastercard",
+      "img": "img_mastercard_card",
+      "card_length": 16,
+      "pattern": "^(5[1-5][0-9]{4}|677189)[0-9]{5,}$",
+      "cvvlength": 3
+    },{
+      "id": "hipercard",
+      "name": "Hipercard",
+      "img": "img_hipercard",
+      "card_length": 16,
+      "pattern": "^(606282|3841)[0-9]{5,}$",
+      "cvvlength": 3
+    },{
+      "id": "amex",
+      "name": "American Express",
+      "img": "img_american_express_card",
+      "card_length": 15,
+      "pattern": "^3[47][0-9]{5,}$",
+      "cvvlength": 4
+    },{
+      "id": "diners",
+      "name": "Diners",
+      "img": "img_diners_card",
+      "card_length": 13,
+      "pattern": "^3(?:0[0-5]|[68][0-9])[0-9]{4,}$",
+      "cvvlength": 3
+    },{
+      "id": "elo",
+      "name": "Elo",
+      "img": "img_elo_card",
+      "card_length": 16,
+      "pattern": "^((((636368)|(438935)|(504175)|(451416)|(636297))[0-9]{0,10})|((5067)|(4576)|(4011))[0-9]{0,12})$",
+      "cvvlength": 3
+    },{
+      "id": "melicard",
+      "name": "Cartão MercadoLivre",
+      "img": "img_cartao_mercadolivere_card",
+      "card_length": 16,
+      "pattern": "^((530032)|(522499))",
+      "cvvlength": 3
+    },{
+      "id": "bolbradesco",
+      "name": "Boleto",
+      "img": "img_boleto_card",
+      "card_length": 16,
+      "pattern": "",
+      "cvvlength": 3
+    }
+  ]
+}

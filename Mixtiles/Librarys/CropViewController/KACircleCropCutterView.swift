@@ -15,7 +15,6 @@ class KACircleCropCutterView: UIView {
         didSet {
             setNeedsDisplay()
         }
-        
     }
     
     override init(frame: CGRect) {
@@ -42,11 +41,11 @@ class KACircleCropCutterView: UIView {
         case .iPhoneSE,.iPhone5,.iPhone5S, .iPhone5C:
             circle = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 280/2, y: rect.size.height/2 - 280/2, width: 280, height: 280))
             square = circle
-        case .iPhone6, .iPhone7, .iPhone8, .iPhone6S, .iPhoneX, .iPhoneXS:
-            circle = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 320/2, y: rect.size.height/2 - 320/2, width: 320, height: 320))
+        case .iPhone6, .iPhone6plus, .iPhone7, .iPhone8, .iPhone6S, .iPhoneX, .iPhoneXS:
+            circle = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 324/2, y: rect.size.height/2 - 324/2, width: 324, height: 324))
             square = circle
         default:
-            circle = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 320/2, y: rect.size.height/2 - 320/2, width: 320, height: 320))
+            circle = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 364/2, y: rect.size.height/2 - 364/2, width: 364, height: 364))
             square = circle
         }
 
@@ -62,11 +61,11 @@ class KACircleCropCutterView: UIView {
         square.lineWidth = 1.0
         context?.setBlendMode(.normal)
         square.stroke()
-        
     }
     
     //Allow touches through the circle crop cutter view
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        print(point)
         for subview in subviews as [UIView] {
             if !subview.isHidden && subview.alpha > 0 && subview.isUserInteractionEnabled && subview.point(inside: convert(point, to: subview), with: event) {
                 return true

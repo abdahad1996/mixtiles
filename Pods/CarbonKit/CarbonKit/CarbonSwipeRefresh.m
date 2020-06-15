@@ -206,7 +206,7 @@ typedef NS_ENUM(NSUInteger, PullState) {
 - (void)didMoveToSuperview {
     if (self.superview != nil) {
         dispatch_once(&initConstraits, ^{
-            self->topConstrait = [NSLayoutConstraint constraintWithItem:self
+            topConstrait = [NSLayoutConstraint constraintWithItem:self
                                                         attribute:NSLayoutAttributeTop
                                                         relatedBy:NSLayoutRelationEqual
                                                            toItem:self.superview
@@ -222,7 +222,7 @@ typedef NS_ENUM(NSUInteger, PullState) {
                                                              constant:0];
 
             [self setTranslatesAutoresizingMaskIntoConstraints:NO];
-            [self.superview addConstraint:self->topConstrait];
+            [self.superview addConstraint:topConstrait];
             [self.superview addConstraint:centerXConstrait];
         });
     }
@@ -308,7 +308,7 @@ typedef NS_ENUM(NSUInteger, PullState) {
                 pullState = PullStateRefreshing;
                 [UIView animateWithDuration:.2f
                                  animations:^{
-                                     self->topConstrait.constant = 10 - self->marginTop;
+                                     topConstrait.constant = 10 - marginTop;
                                      [self.superview layoutIfNeeded];
                                  }];
                 [self startAnimating];
@@ -316,11 +316,11 @@ typedef NS_ENUM(NSUInteger, PullState) {
             } else {
                 [UIView animateWithDuration:0.2
                                  animations:^{
-                                     self->topConstrait.constant = -50 - self->marginTop;
+                                     topConstrait.constant = -50 - marginTop;
                                      [self.superview layoutIfNeeded];
                                  }
                                  completion:^(BOOL finished) {
-                                     self->pathLayer.strokeColor = ((UIColor *)self.colors[self->colorIndex]).CGColor;
+                                     pathLayer.strokeColor = ((UIColor *)self.colors[colorIndex]).CGColor;
                                  }];
             }
         }
@@ -494,11 +494,11 @@ typedef NS_ENUM(NSUInteger, PullState) {
                      completion:^(BOOL finished) {
                          [self endAnimating];
 
-                         self->pullState = PullStateFinished;
-                         self->colorIndex = 0;
-                         self->pathLayer.strokeColor = ((UIColor *)self.colors[self->colorIndex]).CGColor;
+                         pullState = PullStateFinished;
+                         colorIndex = 0;
+                         pathLayer.strokeColor = ((UIColor *)self.colors[colorIndex]).CGColor;
 
-                         self->topConstrait.constant = -50 + self->marginTop;
+                         topConstrait.constant = -50 + marginTop;
                      }];
 }
 
@@ -513,7 +513,7 @@ typedef NS_ENUM(NSUInteger, PullState) {
                          self.layer.opacity = 1;
                          self.layer.transform = CATransform3DMakeScale(1, 1, 1);
 
-                         self->topConstrait.constant = 10 - self->marginTop;
+                         topConstrait.constant = 10 - marginTop;
                          [self layoutIfNeeded];
 
                      }

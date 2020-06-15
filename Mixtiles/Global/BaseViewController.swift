@@ -13,16 +13,14 @@ import SystemConfiguration
 class BaseViewController: UIViewController {
 
     var ipaddress = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
         
     }
     
@@ -46,9 +44,9 @@ class BaseViewController: UIViewController {
     {
         MBProgressHUD.hide(for: self.view, animated: true)
     }
+    
     func convertImageToBase64(image: UIImage) -> String {
-//        let imageData = UIImagePNGRepresentation(image)!
-        let imageData = UIImageJPEGRepresentation(image, 0.7)
+        let imageData = image.jpegData(compressionQuality: 0.75) //UIImageJPEGRepresentation(image, 0.7)
         return imageData!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
     }
     
@@ -56,7 +54,7 @@ class BaseViewController: UIViewController {
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
         
         let scale = newWidth / image.size.width
-        let newHeight = image.size.height * scale
+        _ = image.size.height * scale
         UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newWidth))
         image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newWidth))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -93,11 +91,14 @@ class BaseViewController: UIViewController {
             posY = 0
             cgwidth = contextSize.height
             cgheight = contextSize.height
-        } else {
+        } else if contextSize.height > contextSize.width {
             posX = 0
             posY = ((contextSize.height - contextSize.width) / 2)
             cgwidth = contextSize.width
             cgheight = contextSize.width
+        } else {
+            cgwidth = contextSize.width
+            cgheight = contextSize.height
         }
         
         let rect: CGRect = CGRect(x: posX, y: posY, width: cgwidth, height: cgheight)
@@ -210,7 +211,6 @@ public class Reachability {
 extension Date {
     var millisecondsSince1970:Int64 {
         return Int64((self.timeIntervalSince1970 * 1000.0).rounded())
-        //RESOLVED CRASH HERE
     }
     
     init(milliseconds:Int) {
@@ -228,17 +228,4 @@ extension String {
         }
         return result
     }
-   /* mutating func insert(separator: String, every n: Int) {
-        self = inserting(separator: separator, every: n)
-    }
-    func inserting(separator: String, every n: Int) -> String {
-        var result: String = ""
-        let characters = Array(self)
-        stride(from: 0, to: count, by: n).forEach {
-            result += String(characters[$0..<min($0+n, count)])
-            if $0+n < count {
-                result += separator
-            }
-        }
-        return result
-    }*/}
+}

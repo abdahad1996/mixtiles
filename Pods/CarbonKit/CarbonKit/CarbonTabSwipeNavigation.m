@@ -85,31 +85,35 @@
 }
 
 - (instancetype)initWithItems:(NSArray *)items delegate:(id)target {
-    selectedIndex = 0;
-    self.delegate = target;
-    self.viewControllers = [NSMutableDictionary new];
+    self = [super init];
+    if (self) {
+        selectedIndex = 0;
+        self.delegate = target;
+        self.viewControllers = [NSMutableDictionary new];
 
-    [self createSegmentedToolbar];
-    [self createTabSwipeScrollViewWithItems:items];
-    [self addToolbarIntoSuperview];
-    [self createPageViewController];
+        [self createSegmentedToolbar];
+        [self createTabSwipeScrollViewWithItems:items];
+        [self addToolbarIntoSuperview];
+        [self createPageViewController];
 
-    [self loadFirstViewController];
-
+        [self loadFirstViewController];
+    }
     return self;
 }
 
 - (instancetype)initWithItems:(NSArray *)items toolBar:(UIToolbar *)toolBar delegate:(id)target {
-    selectedIndex = 0;
-    self.delegate = target;
-    self.viewControllers = [NSMutableDictionary new];
+    self = [super init];
+    if (self) {
+        selectedIndex = 0;
+        self.delegate = target;
+        self.viewControllers = [NSMutableDictionary new];
 
-    [self setToolbar:toolBar];
-    [self createTabSwipeScrollViewWithItems:items];
-    [self createPageViewController];
+        [self setToolbar:toolBar];
+        [self createTabSwipeScrollViewWithItems:items];
+        [self createPageViewController];
 
-    [self loadFirstViewController];
-
+        [self loadFirstViewController];
+    }
     return self;
 }
 
@@ -144,7 +148,7 @@
         [self syncIndicator];
         [CATransaction commit];
     } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-        self->isSwipeLocked = NO;
+        isSwipeLocked = NO;
     }];
     isSwipeLocked = YES;
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
@@ -177,8 +181,8 @@
     self.pageViewController.view.userInteractionEnabled = NO;
 
     id animateCompletionBlock = ^(BOOL finished) {
-        self->isSwipeLocked = NO;
-        self->selectedIndex = index;
+        isSwipeLocked = NO;
+        selectedIndex = index;
         self.carbonSegmentedControl.userInteractionEnabled = YES;
         self.pageViewController.view.userInteractionEnabled = YES;
 
@@ -218,7 +222,7 @@
     previewsOffset = CGPointMake(offsetX, 0);
     [UIView animateWithDuration:isLoaded ? 0.3 : 0
                      animations:^{
-                         self.carbonTabSwipeScrollView.contentOffset = self->previewsOffset;
+                         self.carbonTabSwipeScrollView.contentOffset = previewsOffset;
                      }];
 }
 

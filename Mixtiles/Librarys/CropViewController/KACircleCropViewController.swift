@@ -10,10 +10,8 @@ import UIKit
 
 protocol KACircleCropViewControllerDelegate
 {
-    
     func circleCropDidCancel()
     func circleCropDidCropImage(_ image: UIImage)
-    
 }
 
 class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
@@ -25,9 +23,9 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     let scrollView = KACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.width - 50))
     let cutterView = KACircleCropCutterView()
     
-    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 30))
-    let okButton = UIButton(frame: CGRect(x: 0, y: 0, width: 90, height: 30))
-    let backButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
+    let label = UILabel(frame: CGRect(x: 0, y: 10, width: 130, height: 30))
+    let okButton = UIButton(frame: CGRect(x: 0, y: 10, width: 90, height: 30))
+    let backButton = UIButton(frame: CGRect(x: 8, y: 10, width: 26, height: 26))
     
     
     init(withImage image: UIImage) {
@@ -42,7 +40,6 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
-        
     }
     
     // MARK: View management
@@ -61,12 +58,13 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         let scaleWidth = scrollView.frame.size.width / scrollView.contentSize.width
         scrollView.minimumZoomScale = scaleWidth
-        if imageView.frame.size.width < scrollView.frame.size.width {
-            print("We have the case where the frame is too small")
-            scrollView.maximumZoomScale = scaleWidth * 2
-        } else {
-            scrollView.maximumZoomScale = 1.0
-        }
+        scrollView.maximumZoomScale = 4.0
+//        if imageView.frame.size.width < scrollView.frame.size.width {
+//            print("We have the case where the frame is too small")
+//            scrollView.maximumZoomScale = scaleWidth * 2
+//        } else {
+//            scrollView.maximumZoomScale = 2.0
+//        }
         scrollView.zoomScale = scaleWidth
         
         //Center vertically
@@ -79,19 +77,15 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         //Add the label and buttons
         label.text = LocalizedLanguage(key: "lbl_title_adjust_crop", languageCode: lanCode)
-//        label.text = "Adjust & Crop"
         label.textAlignment = .center
         label.textColor = UIColor.white
         label.font = label.font.withSize(17)
         
-        okButton.setTitle(LocalizedLanguage(key: "btn_done", languageCode: lanCode), for: UIControlState())
-        okButton.setTitleColor(UIColor.white, for: UIControlState())
+        okButton.setTitle(LocalizedLanguage(key: "btn_done", languageCode: lanCode), for: UIControl.State())
+        okButton.setTitleColor(UIColor.white, for: UIControl.State())
         okButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
         okButton.addTarget(self, action: #selector(didTapOk), for: .touchUpInside)
-        
-//        backButton.setTitle("<", for: UIControlState())
-//        backButton.setTitleColor(UIColor.white, for: UIControlState())
-//        backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(30)
+
         backButton.setImage(UIImage(named: "ic_back"), for: .normal)
         backButton.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
         
@@ -102,8 +96,6 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         cutterView.addSubview(label)
         cutterView.addSubview(okButton)
         cutterView.addSubview(backButton)
-        
-        
     }
     
     
@@ -117,12 +109,10 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         okButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 + view.frame.size.width/2 - okButton.frame.size.width - 12, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 25)
         
         backButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - view.frame.size.width/2 + 3, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 25)
-        
     }
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        
         
         coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
             
@@ -143,20 +133,18 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     // MARK: Button taps
     
     @objc func didTapOk() {
-        
 
         let newSize = CGSize(width: image.size.width*scrollView.zoomScale, height: image.size.height*scrollView.zoomScale)
         
         let offset = scrollView.contentOffset
         
-//        UIGraphicsBeginImageContextWithOptions(CGSize(width: 280, height: 280), false, 0)
         switch UIDevice().type {
         case .iPhoneSE,.iPhone5,.iPhone5S, .iPhone5C:
              UIGraphicsBeginImageContextWithOptions(CGSize(width: 280, height: 280), false, 0)
-        case .iPhone6, .iPhone7, .iPhone8, .iPhone6S, .iPhoneX, .iPhoneXS:
-             UIGraphicsBeginImageContextWithOptions(CGSize(width: 300, height: 300), false, 0)
+        case .iPhone6, .iPhone6plus, .iPhone7, .iPhone8, .iPhone6S, .iPhoneX, .iPhoneXS:
+             UIGraphicsBeginImageContextWithOptions(CGSize(width: 324, height: 324), false, 0)
         default:
-            UIGraphicsBeginImageContextWithOptions(CGSize(width: 320, height: 320), false, 0)
+            UIGraphicsBeginImageContextWithOptions(CGSize(width: 364, height: 364), false, 0)
         }
         
         var sharpRect = CGRect(x: -offset.x, y: -offset.y, width: newSize.width, height: newSize.height)
@@ -165,7 +153,7 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         image.draw(in: sharpRect)
         let finalImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        if let imageData = UIImagePNGRepresentation(finalImage!) {
+        if let imageData = finalImage!.pngData() {
             if let pngImage = UIImage(data: imageData) {
                 delegate?.circleCropDidCropImage(pngImage)
             } else {
@@ -174,16 +162,10 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         } else {
             delegate?.circleCropDidCancel()
         }
-        
-        
-        
     }
     
     @objc func didTapBack() {
-        
         delegate?.circleCropDidCancel()
-        
     }
     
-
 }

@@ -15,7 +15,6 @@ class KACircleCropScrollView: UIScrollView {
         self.clipsToBounds = false
         self.showsHorizontalScrollIndicator = false
         self.showsVerticalScrollIndicator = false
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,7 +22,6 @@ class KACircleCropScrollView: UIScrollView {
         self.clipsToBounds = false
         self.showsHorizontalScrollIndicator = false
         self.showsVerticalScrollIndicator = false
-        
     }
 
     //Allow dragging outside of the scroll view bounds

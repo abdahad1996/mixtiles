@@ -1,0 +1,142 @@
+/* 
+  Localizable.strings
+  Freshchat
+
+  Copyright (c) 2015 Freshdesk. All rights reserved.
+*/
+
+/* Solution Categories*/
+"faq_title_text"="FAQs";
+"faq_close_button_text"="Voltar";
+"contact_us_button_text"="Mensagem nos";
+"faq_feature_not_enabled_text"="O recurso de FAQ está desativado";
+
+/* Article UpVote DownVote */
+"article_vote_prompt_text"="Nós abordamos suas preocupações?";
+"article_vote_prompt_yes_button_text"="sim";
+"article_vote_prompt_no_button_text"="Não";
+
+/* Article Vote thank you prompt */
+"thank_you_prompt_text"="Obrigado pelo seu feedback!";
+"thank_you_prompt_contact_us_button_text"="Ainda procurando ajuda? Fale Conosco";
+
+/* Article Detail */
+"offline_missing_content_text"="Por favor, conecte-se à Internet para visualizar o conteúdo de mídia disponível neste artigo.";
+
+/* No Internet Connectivity */
+"offline_internet_message"="Uh-uh Sem conexão com a internet";
+
+/*Channels*/
+"channels_title_text"="Conversas";
+"channels_close_button_text"="Voltar";
+"channels_feature_not_enabled_text"="O recurso de conversa está desativado";
+
+/*Restoring view*/
+"restore_close_button_text"="Voltar";
+
+/* Message UI */
+"message_placeholder_text" = "Digite uma mensagem";
+"messages_close_button_text"="Voltar";
+"send_button_text"="Mandar";
+"messages_agent_label_text"="Apoio, suporte";
+"default_action_button_text"="Visão";
+"default_video_button_text"="Assista vídeo";
+"default_file_button_text"="Abrir arquivo";
+
+
+"audio_message_title"="Mensagem de áudio";
+"picture_message_title"="Imagem";
+"picture_message_upload_error"="Erro ao carregar a imagem. Imagem não encontrada";
+
+"audio_recording"="Gravação de áudio";
+"audio_recording_stopped"="Gravação interrompida";
+"audio_recording_permission_denied"="Permissão em falta. Por favor habilite a permissão do Microfone em Configurações.";
+
+"cancel_audio_recording_alert"="Tem certeza de que deseja cancelar a gravação?";
+
+"empty_message_title"="Mensagem Vazia";
+"empty_message_info_text"="Whoa ai! Você não pode enviar uma mensagem vazia. Compor uma mensagem para enviar";
+"modify_push_setting_title"="Modificar Push Setting";
+"modify_push_setting_info_text"="Ative as notificações por push para serem notificadas mesmo fora deste bate-papo. Ativar notificações push para este aplicativo em Configurações -> Centro de Notificações";
+"message_unsent_title"="Sua mensagem não foi enviada";
+"message_unsent_info_text"="Não foi possível enviar sua (s) mensagem (s) neste momento. Verifique a internet ou tente novamente mais tarde";
+"server_error_info_text"="Problema enviando mensagem. Por favor, tente novamente mais tarde.";
+
+/* Account delete messages for actions*/
+"error_message_account_not_active_text" = "Esta seção não está mais disponível";
+"error_message_account_not_active_cancel" = "Cancelar";
+
+/* Posting audio message alerts */
+"short_audio_alert_title" = "Sua mensagem é muito curta.";
+"short_audio_alert_description_text" = "A gravação de áudio é muito curta. Por favor, tente novamente";
+"long_audio_alert_title" = "Muito tempo você não acha?";
+"long_audio_alert_description_text" = "Sua mensagem de áudio tem mais de 2 minutos de duração. Claro que você quer enviar?";
+"long_audio_alert_post_button_text" = "Envie isto";
+
+/* Search View Place Holder */
+"search_placeholder_text"="Pesquisar FAQs";
+"search_empty_result_text"="Ops! Não encontramos o que você estava procurando.";
+"empty_channel_text" = "Oops, não há mensagens aqui!";
+"empty_faq_text" = "Desculpa! Não há FAQs disponíveis";
+"loading_channel_text" = "Carregando mensagens";
+"restoring_channel_text" = "Restaurando Mensagens";
+"loading_faq_text" = "Carregando FAQs";
+
+/* Camera Unavailable alert */
+"camera_unavailable_title"="Your camera is unavailable";
+"camera_unavailable_description"="Oopsie! Your device doesn't have a camera or the camera is not available for use";
+"camera_unavailable_ok_button_text"="Está bem";
+"camera_permission_denied" ="Permissões de câmera são necessárias para capturar imagens";
+"photo_library_permission_denied" ="A permissão da biblioteca de fotos é necessária para acessar fotos";
+"camera_permission_alert_cancel" ="Cancelar";
+"photo_library_permission_alert_cancel" ="Cancelar";
+
+/* Picture attached*/
+"pic_msg_attachment_close_btn"="De volta";
+"pic_msg_attachment_title_text"="Cenário";
+
+/*Image Attachment*/
+"image_attachment_cancel_button_text"="Cancelar";
+"image_attachment_select_existing_image"="Upload da galeria";
+"image_attachment_select_new_image"="Tirar uma foto";
+
+/*days*/
+"day_sunday"="Sunday";
+"day_monday"="Monday";
+"day_tuesday"="Tuesday";
+"day_wednesday"="Wednesday";
+"day_thursday"="Thursday";
+"day_friday"="Friday";
+"day_saturday"="Saturday";
+
+/*Notifications*/
+"notification_message_default"="Você tem uma mensagem!";
+
+/* Customer Satisfaction Survey */
+
+/* Yes No Prompt */
+"chat_resolution_prompt_text"="Todas as suas preocupações foram abordadas? ";
+"chat_resolution_prompt_yes_button_text"="Sim!";
+"chat_resolution_prompt_no_button_text"="Não";
+
+/* Survey prompt */
+"cust_sat_not_resolved_prompt"="Como poderíamos ajudá-lo melhor?";
+"cust_sat_user_comments_placeholder"="Feedback adicional";
+"cust_sat_submit_button_text"="Mandar";
+
+/* Typically replies */
+"typically_replies_within_a_minute"="Normalmente responde dentro de um minuto";
+"typically_replies_within_x_minutes"="Normalmente responde dentro";
+"typically_replies_within_an_hour"="Normalmente responde dentro de uma hora";
+"typically_replies_within_2_hours"="Normalmente responde dentro de 2 horas";
+"typically_replies_within_few_hours"="Normalmente responde dentro de poucas horas";
+
+"placeholder_minutes"="minutos";
+
+/*Average replies */
+"currently_replying_in_a_minute" = "Atualmente respondendo em um minuto";
+"currently_replying_in_x_minutes"="Atualmente respondendo em";
+"currently_replying_in_an_hour"="Atualmente respondendo em uma hora";
+"currently_replying_in_2_hours"="Atualmente respondendo em 2 horas";
+"currently_replying_in_few_hours"="Atualmente respondendo em poucas horas";
+

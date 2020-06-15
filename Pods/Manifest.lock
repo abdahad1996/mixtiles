@@ -1,62 +1,170 @@
 PODS:
-  - Alamofire (4.7.2)
-  - CarbonKit (2.2.2)
+  - Alamofire (4.8.0)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - CarbonKit (2.3.1)
+  - CardIO (5.4.1)
   - CPF-CNPJ-Validator (1.0.2)
-  - CropViewController (2.3.6)
-  - DropDown (2.3.2)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - CropViewController (2.4.0)
+  - DropDown (2.3.12)
+  - Fabric (1.9.0)
+  - FacebookSDK (4.38.0):
+    - Bolts (~> 1.9)
+    - FacebookSDK/CoreKit (= 4.38.0)
+    - FacebookSDK/MarketingKit (= 4.38.0)
+  - FacebookSDK/CoreKit (4.38.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit
+  - FacebookSDK/MarketingKit (4.38.0):
+    - Bolts (~> 1.9)
+    - FacebookSDK/CoreKit
+    - FBSDKMarketingKit
+  - FBSDKCoreKit (4.39.0):
+    - Bolts (~> 1.9)
+  - FBSDKMarketingKit (4.38.0):
+    - FBSDKCoreKit
+  - Firebase/Core (5.14.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.4.0)
+  - Firebase/CoreOnly (5.14.0):
+    - FirebaseCore (= 5.1.9)
+  - FirebaseAnalytics (5.4.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (= 5.4.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.9):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
   - FreshchatSDK (1.4.0)
-  - IQKeyboardManagerSwift (5.0.0)
-  - SDWebImage (4.3.3):
-    - SDWebImage/Core (= 4.3.3)
-  - SDWebImage/Core (4.3.3)
+  - GoogleAppMeasurement (5.4.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.6):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.6)
+  - GoogleUtilities/Logger (5.3.6):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.6):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.6)"
+  - GoogleUtilities/Reachability (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.6):
+    - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.2.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - OneSignal (2.9.4)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
   - SVProgressHUD (2.2.5)
-  - SwiftyToolTip (0.0.1)
   - SWXMLHash (4.0.0)
-  - TextFieldEffects (1.4.0)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
+  - Alamofire
   - CarbonKit
+  - CardIO
   - CPF-CNPJ-Validator
+  - Crashlytics (~> 3.12.0)
   - CropViewController
   - DropDown
+  - Fabric (~> 1.9.0)
+  - FacebookSDK
+  - Firebase/Core
   - FreshchatSDK
-  - IQKeyboardManagerSwift (= 5.0.0)
-  - SDWebImage (~> 4.0)
+  - IQKeyboardManagerSwift
+  - OneSignal
+  - SDWebImage
   - SVProgressHUD
-  - SwiftyToolTip
   - SWXMLHash (~> 4.0.0)
   - TextFieldEffects
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - CarbonKit
+    - Bolts
+    - CardIO
     - CPF-CNPJ-Validator
+    - Crashlytics
     - CropViewController
     - DropDown
+    - Fabric
+    - FacebookSDK
+    - FBSDKCoreKit
+    - FBSDKMarketingKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
     - FreshchatSDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
     - IQKeyboardManagerSwift
+    - nanopb
+    - OneSignal
     - SDWebImage
     - SVProgressHUD
-    - SwiftyToolTip
     - SWXMLHash
     - TextFieldEffects
+  trunk:
+    - CarbonKit
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  CarbonKit: 0dec4738fa489b4c043a5f850c27fd0dbefb57cc
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  CarbonKit: b60e24dbdb47179990d5e074efa87ab819c8de98
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
-  CropViewController: e6d4bd512d15a1709e9ddf71fe7d98ffd05dda0f
-  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  CropViewController: a090820b15fc3da68e694d7c192a4708c576828b
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  FacebookSDK: 73f54b8b94e09b05647cdef0af147f470cd3edc6
+  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
+  FBSDKMarketingKit: e609f39d74ab273cf52e2f8b7e8829ed412b2827
+  Firebase: 963d5685fae888a56d6d4d9cfce6b9c976958798
+  FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
+  FirebaseCore: 8f49b70f57ab5cbb032ef41d64992ded21606459
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
   FreshchatSDK: a7f9a47efc3700172db8ff33c62718166d0ccd5f
-  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
-  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
+  GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  OneSignal: a41f5a896177275662da07e23d6a809c0e105a89
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftyToolTip: 231c750a7e38cf7c06dc1702e81029f4cb85e128
   SWXMLHash: 6bbc0bf72975a18ceda469fb7d6a886a26d81694
-  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: 5f97455a96305f595c95337b9663f0fe86c05d45
+PODFILE CHECKSUM: 56f8d8077af62a6648abcadfb8cd1279d81da01d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

@@ -8,6 +8,8 @@
 
 import UIKit
 import SVProgressHUD
+import AVFoundation
+import Photos
 
 private let _sharedInstance = ApiUtillity()
 
@@ -15,6 +17,22 @@ class ApiUtillity: NSObject {
     
     class var sharedInstance: ApiUtillity {
         return _sharedInstance
+    }
+    
+    // For Check-Permission
+    func checkPermission(vc:UIViewController) -> Bool {
+        if PHPhotoLibrary.authorizationStatus() == .denied {
+            let alert = UIAlertController(title: "Photo Access", message: "Please give this app permission to access your photo library in your settings app!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Open", style: .default, handler: { (UIAlertAction) in
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+            }))
+            vc.present(alert, animated: true, completion: nil)
+            return false
+        }
+        else {
+            return true
+        }
     }
     
     // For Show SVProgressHUD
